@@ -1,0 +1,267 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Header */
+
+header{
+	height: 100vh;
+	width: 100%
+}
+
+/*navigation on the top of website*/
+.navigation{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	text-decoration: none;
+	z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent white */
+    backdrop-filter: blur(2px); /* Blur effect */
+}
+
+nav{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	width: 100%;
+	font-family: Arial, sans-serif;
+	padding: 5px 0;
+}
+
+.navLeft{
+	font-size: 40px;
+	display: flex;
+	margin-left: 90px;
+	animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navRight{
+	display: flex;
+	gap: 30px;
+	margin-right: 70px;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+.homeImg {
+    position: flex; 
+    width: 100%;
+    height: 100vh; /* Full screen height */
+}
+
+.homeImg img {
+    position: absolute;
+    width: 100%;
+    height: auto; 
+    left: 0;
+	right: 0;
+    top: 0;
+    z-index: -1; 
+}
+
+/* Booking Title */
+.booking-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 500px;
+	z-index: 1000;
+}
+
+main{
+	margin-top:-750px;
+	margin-right: 170px;
+}
+
+/* Form Styling */
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+}
+
+/* Input Fields */
+.input-box, .custom-dropdown select, .input-small, .message-box {
+    width: 100%;
+    height: 50px;  /* Ensures all elements are uniform */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: lightblue;
+    font-size: 16px;
+    color: black;
+}
+
+/* Custom Dropdown */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+/* Custom dropdown arrow */
+.custom-dropdown::after {
+    content: "\25BC";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: white;
+}
+
+.custom-dropdown select {
+    appearance: none; /* Removes default dropdown styling */
+    cursor: pointer;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-small {
+    width: 50%;
+}
+
+/* Message Box */
+.message-box {
+    height: 120px; /* Slightly larger for messages */
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightblue;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Map Box */
+.map-box {
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 280px; 
+    margin-left: -505px;
+}
+
+/* Profile Card */
+.profile-container {
+    width: 450px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: lightblue;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	margin-top: 10px;
+}
+
+.profile-img {
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info h2 {
+    font-size: 30px;
+    margin: 0;
+	color: black;
+	font-family: Arial,sans-serif;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+footer{
+	justify-content: center;
+	text-align: center;
+	color: white;
+	margin-top: 250px;
+}

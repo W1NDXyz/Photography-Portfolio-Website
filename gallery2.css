@@ -1,0 +1,143 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black; 
+    color: white;
+}
+
+/* Navigation Bar */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px); 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+/* Navigation Content */
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLeft {
+    font-size: 40px;
+}
+
+.navRight {
+   display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Black Divider Line */
+.line {
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    background-color: white;
+    left: 2.5%;
+    top: 100px;
+}
+
+/* Title Section */
+.title-container {
+    margin-top: 140px;
+}
+
+.title-below-line {
+    font-size: 26px;
+    font-weight: bold;
+    color: white
+}
+
+/* Gallery */
+.gallery-container {
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 20px; /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+.masonry-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Custom Heights */
+.tall {
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+

@@ -1,0 +1,116 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black; /* Changed background to black */
+    color: white; /* Changed text color to white */
+}
+
+/* Navigation Bar */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    backdrop-filter: blur(2px); /* Blur effect */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+/* Navigation Content */
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLeft {
+    font-size: 40px;
+    color: white; /* Changed text color to white */
+}
+
+.navRight {
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Changed text color to white */
+}
+
+/* Black Divider Line */
+.line {
+    position: absolute;
+    width: 95%;
+    height: 2px;
+    background-color: white; /* Changed line color to white */
+    left: 2.5%;
+    top: 100px;
+}
+
+/* Title Below the Line */
+.title-container {
+    margin-top: 140px; /* Moves the title below the line */
+}
+
+.title-below-line {
+    font-size: 26px;
+    font-weight: bold;
+    color: white; /* Changed text color to white */
+}
+
+/* Gallery Section */
+.gallery-container {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 450px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3); /* Adjusted shadow for visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Changed text color to white */
+    font-weight: bold;
+    padding: 10px;
+    background: none;
+}
+
+.card-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .category {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white; /* Changed text color to white */
+}
+
+.card .title {
+    font-size: 20px;
+    margin-top: 5px;
+    color: white; /* Changed text color to white */
+}
