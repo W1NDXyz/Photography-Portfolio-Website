@@ -55,18 +55,29 @@ Booking form with real-time input feedback
 Engaging user interface to keep visitors interested and exploring
 
 ## 📁 File Structure
-markdown
-Copy code
+
 project-folder/
+
 ├── home.html
+
 │   └── home.css
+
 ├── gallery.html
+
 │   └── gallery.css
+
 ├── about.html
+
 │   └── about.css
+
 ├── booking.html
+
 │   └── booking.css
+
 └── images/
-    └── (your photo assets here)
+
+│    └── (your photo assets here)
+
+    
 ## 🙌 Get Involved
 This project was created for learning and demonstration purposes. Feel free to explore the code, use it as a reference, or build upon it!
